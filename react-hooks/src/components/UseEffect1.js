@@ -6,7 +6,7 @@ function UseEffect1() {
   const [count, setCount] = useState(0);
   const [name, setName] = useState("");
 
-  //called everytime there is a render
+  //called everytime there is a render, since dependent on count rendered only when count changes
   useEffect(() => {
     console.log("here");
     document.title = `You clicked ${count} times `;

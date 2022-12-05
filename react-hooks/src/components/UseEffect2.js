@@ -1,3 +1,4 @@
+//to run useeffect only once, use an empty dependent array
 import React, { useEffect, useState } from "react";
 
 function UseEffect2() {
@@ -13,6 +14,11 @@ function UseEffect2() {
   useEffect(() => {
     console.log("in useeefect");
     window.addEventListener("mouseover", logMousePosition);
+
+    return () => {
+      console.log("unmounting component");
+      window.removeEventListener("mouseover", logMousePosition);
+    };
   }, []);
 
   return (
