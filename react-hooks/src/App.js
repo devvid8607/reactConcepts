@@ -19,6 +19,9 @@ import ComponentC from "./components/ReducerContext/ComponentC";
 import React, { useReducer } from "react";
 import DataFetching1 from "./components/DataFetching1";
 import DataFecthing2 from "./components/DataFecthing2";
+import ParentComponent from "./components/UseCallBackExample/ParentComponent";
+import UseMemo from "./components/useMemo";
+import UseRefdemo from "./components/UseRefdemo";
 
 export const CountContext = React.createContext();
 
@@ -43,7 +46,10 @@ function App() {
     //   value={{ countValue: count, dispatchValue: dispatch }}
     // >
     <div className="App">
-      <DataFecthing2 />
+      <UseRefdemo />
+      {/* <UseMemo /> */}
+      {/* <ParentComponent /> */}
+      {/* <DataFecthing2 /> */}
       {/* <DataFetching1 /> */}
       {/* Count -{count} */}
       {/* <ComponentA />
