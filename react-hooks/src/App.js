@@ -22,6 +22,9 @@ import DataFecthing2 from "./components/DataFecthing2";
 import ParentComponent from "./components/UseCallBackExample/ParentComponent";
 import UseMemo from "./components/useMemo";
 import UseRefdemo from "./components/UseRefdemo";
+import DocTitle1 from "./components/CustomHooks/DocTitle1";
+import Counter1 from "./components/CustomHooks/Counter1";
+import UserForm from "./components/CustomHooks/UserForm";
 
 export const CountContext = React.createContext();
 
@@ -46,7 +49,10 @@ function App() {
     //   value={{ countValue: count, dispatchValue: dispatch }}
     // >
     <div className="App">
-      <UseRefdemo />
+      <UserForm />
+      {/* <Counter1 /> */}
+      {/* <DocTitle1 /> */}
+      {/* <UseRefdemo /> */}
       {/* <UseMemo /> */}
       {/* <ParentComponent /> */}
       {/* <DataFecthing2 /> */}
