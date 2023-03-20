@@ -55,6 +55,7 @@ function App() {
       {/* <UseRefdemo /> */}
       {/* <UseMemo /> */}
       {/* <ParentComponent /> */}
+      <DataFetching1 />
       {/* <DataFecthing2 /> */}
       {/* <DataFetching1 /> */}
       {/* Count -{count} */}
